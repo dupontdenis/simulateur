@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <div class="warning" id="warningBox"> ⚠️ Pensez à modifier les dimensions du conteneur !
+    </div>
     <style>
         #testV1 head {
             display: block;
@@ -116,7 +118,27 @@
             position: relative;
             z-index: 20;
         }
-    </style>
+
+        .warning {
+  color: #eee;
+  background: #bc0000;
+  padding: 3rem 4rem;
+  font-size: 150%;
+  line-height: 1.4;
+  text-align: left;
+  margin-bottom: 1em;
+}
+        .warning {
+  animation: hideWarning 5s forwards;
+}
+
+@keyframes hideWarning {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
+
+    </style> 
 
     <br />
     <br />
@@ -124,28 +146,23 @@
     <article id="testV1">
         <section id="style">
 
-            <style contenteditable="" id="conteneur">
-.conteneur {
+            <style contenteditable="" id="conteneur">.conteneur {
     
 }
             </style>
-            <style contenteditable="" id="item1">
-#it1 {
+            <style contenteditable="" id="item1">#it1 {
     
 }
             </style>
-            <style contenteditable="" id="item2">
-#it2 {
+            <style contenteditable="" id="item2">#it2 {
     
 }
             </style>
-            <style contenteditable="" id="item3">
-#it3 {
+            <style contenteditable="" id="item3">#it3 {
     
 }
             </style>
-<style contenteditable="" id="item4">
-#it4 {
+<style contenteditable="" id="item4">#it4 {
     
 }
             </style>
@@ -196,6 +213,7 @@
             update();
         }
     </script>
+
 
 </body>
 
