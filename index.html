@@ -6,6 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Grid</title>
+    <style>
+           .warning {
+  color: #eee;
+  background: #bc0000;
+  padding: 3rem 4rem;
+  font-size: 150%;
+  line-height: 1.4;
+  text-align: left;
+  margin-bottom: 1em;
+}
+        .warning {
+  animation: hideWarning 5s forwards;
+}
+
+@keyframes hideWarning {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
+
+    </style>
 </head>
 
 <body>
@@ -119,25 +140,7 @@
             z-index: 20;
         }
 
-        .warning {
-  color: #eee;
-  background: #bc0000;
-  padding: 3rem 4rem;
-  font-size: 150%;
-  line-height: 1.4;
-  text-align: left;
-  margin-bottom: 1em;
-}
-        .warning {
-  animation: hideWarning 5s forwards;
-}
-
-@keyframes hideWarning {
-  0% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { opacity: 0; display: none; }
-}
-
+     
     </style> 
 
     <br />
